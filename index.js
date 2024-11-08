@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 // Replace with your actual bot token from BotFather
-const token = '7819660089:AAGj_m2qIv6RiYQPFsSPdkjzfELJOssArVc';
+const token = '7979404960:AAGbr_z64CKlO-0Y8XT9AHlY4V0YTQadyF8';
 
 // Create a bot that uses polling to fetch new updates
 const bot = new TelegramBot(token, { polling: true });
@@ -32,7 +32,7 @@ bot.onText(/\/start/, (msg) => {
         `Welcome! You have been credited with 300,000 Naira.\n` +
         `Your balance is ${userData[userId].balance} Naira.\n` +
         `Refer friends and earn 30,000 Naira each time they join with your referral link:\n` +
-        `t.me/your_bot_username?start=${userId}`
+        `t.me/Githubjiobot?start=${userId}`
     );
 });
 
