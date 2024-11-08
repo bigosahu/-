@@ -1,3 +1,9 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => res.send('Bot is running!'));
+
+app.listen(3000, () => console.log('Server is live!'));
 const TelegramBot = require('node-telegram-bot-api');
 
 // Replace with your actual bot token from BotFather
@@ -29,7 +35,7 @@ bot.onText(/\/start/, (msg) => {
     }
 
     bot.sendMessage(chatId, 
-        `Welcome! You have been credited with 300,000 Naira.\n` +
+        `Welcome! You have been credited with 300,000 Naira use /withdraw to withdraw your money.\n` +
         `Your balance is ${userData[userId].balance} Naira.\n` +
         `Refer friends and earn 30,000 Naira each time they join with your referral link:\n` +
         `t.me/your_bot_username?start=${userId}`
