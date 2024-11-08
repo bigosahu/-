@@ -37,7 +37,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(chatId, 
         `Welcome! You have been credited with 300,000 Naira.\n` +
         `Your balance is ${userData[userId].balance} Naira.\n` +
-        `Refer friends and earn 30,000 Naira each time they join with your referral link:\n` +
+        `Refer friends and earn 30,000 Naira each time they join with your referral link  use /withdraw to withdraw your cash:\n` +
         `t.me/Githubjiobot?start=${userId}`
     );
 });
